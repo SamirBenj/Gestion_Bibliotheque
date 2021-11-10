@@ -14,5 +14,11 @@ public class Bibliotheque {
         public void ajouterLivre(Livre livre){
                 livres.add(livre);
         }
+        public void ajouterRevue(Revue revues){
+            revue.add(revues);
+        }
+        public void ajouterDvd(Dvd dvds){
+            dvd.add(dvds);
+        }
 
 }

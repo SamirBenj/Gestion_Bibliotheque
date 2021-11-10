@@ -1,9 +1,9 @@
 public class Revue {
     private String titre;
     private String auteur;
-    private int publicationYear;
+    private String publicationYear;
 
-    public Revue(String titre, String auteur, int publicationYear) {
+    public Revue(String titre, String auteur, String publicationYear) {
         this.titre = titre;
         this.auteur = auteur;
         this.publicationYear = publicationYear;
@@ -17,7 +17,7 @@ public class Revue {
         return auteur;
     }
 
-    public int getPublicationYear() {
+    public String getPublicationYear() {
         return publicationYear;
     }
 }
