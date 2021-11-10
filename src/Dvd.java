@@ -8,4 +8,16 @@ public class Dvd {
        this.auteur = auteur;
        this.publicationYear = publicationYear;
     }
+
+    public String getTitre() {
+        return titre;
+    }
+
+    public String getAuteur() {
+        return auteur;
+    }
+
+    public String getPublicationYear() {
+        return publicationYear;
+    }
 }
