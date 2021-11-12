@@ -80,11 +80,11 @@ public class Test {
             System.out.println("1 - Ajouter un livre");
             System.out.println("2 - Ajouter une Revue");
             System.out.println("3 - Ajouter un  DVD");
-            System.out.println("4 - Quitter");
+            System.out.println("4 - Chercher un auteur");
+            System.out.println("0 - Quitter");
             System.out.println();
             System.out.println("Entrer votre choix : ");
             System.out.println();
-            System.out.println("Entrer votre choix : ");
             choix = sc.nextInt();
             sc.nextLine();
             System.out.println();
@@ -100,6 +100,9 @@ public class Test {
                 case 3 :
                     Dvd dvd = this.creerDvd();
                     bibliotheque.ajouterDvd(dvd);
+                    break;
+                case 4 :
+                    bibliotheque.chercherAuteur("samir");
                     break;
             }
         }
