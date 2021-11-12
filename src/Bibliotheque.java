@@ -25,8 +25,6 @@ public class Bibliotheque {
 
         public void chercherAuteur(){
             sc = new Scanner(System.in);
-
-            Livre l = null;
             System.out.println("Veuillez entrer le nom de l'auteur");
             String auteurClavier = sc.nextLine();
             for (int i=0; i< livres.size(); i++){
