@@ -81,6 +81,8 @@ public class Test {
             System.out.println("2 - Ajouter une Revue");
             System.out.println("3 - Ajouter un  DVD");
             System.out.println("4 - Chercher un auteur");
+            System.out.println("5 - Chercher un Artiste(dvd)");
+            System.out.println("6 - Chercher un Auteur(revue)");
             System.out.println("0 - Quitter");
             System.out.println();
             System.out.println("Entrer votre choix : ");
@@ -102,7 +104,13 @@ public class Test {
                     bibliotheque.ajouterDvd(dvd);
                     break;
                 case 4 :
-                    bibliotheque.chercherAuteur("samir");
+                    bibliotheque.chercherAuteur();
+                    break;
+                case 5 :
+                    bibliotheque.chercherArtiste();
+                    break;
+                case 6 :
+                    bibliotheque.chercherAuteurRevue();
                     break;
             }
         }
