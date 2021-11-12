@@ -43,6 +43,8 @@ public class Bibliotheque {
         }
 
         public void chercherArtiste(){
+            sc = new Scanner(System.in);
+
             System.out.println("Veuillez entrer le nom d'un artiste");
             String nomArtiste = sc.nextLine();
             for (int i=0;i<dvd.size();i++){
@@ -55,10 +57,13 @@ public class Bibliotheque {
                     System.out.println("Votre artiste n'a pas était trouvé");
                 }
             }
+
         }
 
     public void chercherAuteurRevue(){
-        System.out.println("Veuillez entrer le nom d'un auteru d'une revue");
+        sc = new Scanner(System.in);
+
+        System.out.println("Veuillez entrer le nom d'un auteur d'une revue");
         String nomAuteurRevue = sc.nextLine();
         for (int i=0;i<revue.size();i++){
             if(revue.get(i).getAuteur().equals(nomAuteurRevue)){
